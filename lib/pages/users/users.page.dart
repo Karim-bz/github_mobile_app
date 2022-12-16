@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:github_mobile_app/pages/repositories/repositories.page.dart';
+import 'package:github_mobile_app/widgets/drawer.widget.dart';
 import 'package:http/http.dart' as http;
 
 class UsersPage extends StatefulWidget {
@@ -64,7 +65,7 @@ class _UsersPageState extends State<UsersPage> {
       appBar: AppBar(
         title: Text('Users => $query => $currentPage / $totalPages'),
       ),
-      drawer: const Drawer(),
+      drawer: const MyDrawer(),
       body: Center(
         child: Column(
           children: [
